@@ -22,22 +22,5 @@ var populateContainer = function() {
 }
 
 function checkBox(boxNumber) {
-    for (var i = 1; i <= 9; i++ ){
-        function outer(i, boxNumber) {
-            boxTotal += $("#n-" + boxNumber + "-numbox-" + i).val();
-        }
-    }
-
-    return checkTotals(boxNumber);
-}
-
-
-function checkTotal(goal, input) {
-    return (input === goal);
-}
-
-function checkTotals(input) {
-    function inner(value) {
-        
-    }
+    
 }
