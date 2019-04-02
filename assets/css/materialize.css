@@ -8091,5 +8091,36 @@ input[type=range]::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
+.num-box {
+  border: solid 1px black;
+}
+@media (max-width: 599px) {
+  .num-box {
+    height: 60px;
+  }
+}
+@media (min-width: 600px) {
+  .num-box {
+    height: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .num-box {
+    height: 80px;
+  }
+}
+@media (min-width: 1800px) {
+  .num-box {
+    height: 94px;
+  }
+}
+
+.row {
+  margin: 0;
+}
+
+.one-ninth {
+  border: solid 1px blue;
+}
 
 /*# sourceMappingURL=materialize.css.map */

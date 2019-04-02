@@ -1,0 +1,26 @@
+.num-box {
+    border: solid 1px black;
+    @include for-phone-only {
+        height: 60px;
+    }
+
+    @include for-tablet-portrait-up {
+        height: 60px;
+    }
+
+    @include for-desktop-up {
+        height: 80px;
+    }
+
+    @include for-big-desktop-up {
+        height: 94px;
+    }
+}
+
+.row {
+    margin: 0;
+}
+
+.one-ninth {
+    border: solid 1px blue;
+}
