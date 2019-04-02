@@ -21,15 +21,23 @@ var populateContainer = function() {
 
 }
 
-function checkBox(boxNumber, goal, func) {
-    var boxTotal = 0;
+function checkBox(boxNumber) {
     for (var i = 1; i <= 9; i++ ){
-        boxTotal += $("#n-" + boxNumber + "-numbox-" + i).val();
+        function outer(i, boxNumber) {
+            boxTotal += $("#n-" + boxNumber + "-numbox-" + i).val();
+        }
     }
 
-    return func(goal, boxTotal);
+    return checkTotals(boxNumber);
 }
+
 
 function checkTotal(goal, input) {
     return (input === goal);
+}
+
+function checkTotals(input) {
+    function inner(value) {
+        
+    }
 }
